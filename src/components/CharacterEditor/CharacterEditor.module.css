@@ -26,13 +26,40 @@
 
 .characterWrapper {
   position: fixed;
-  top: 200px;
-  right: 100px;
+  top: 300px;
+  left: 25vw;
   width: auto;
-  height: 1000px;
+  height: 500px;
   min-height: 500px;
 }
 
 .controlColumn {
   width: 50%;
 }
+
+@media screen and (min-width: 768px) {
+  .characterWrapper {
+    position: fixed;
+    top: 200px;
+    left: unset;
+    right: 100px;
+    width: auto;
+    height: 1000px;
+  }
+}
+
+/* @media screen and (max-width: 620px) {
+  .characterWrapper {
+    top: 50px;
+    right: 0;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .characterWrapper {
+    top: "50px";
+    right: -25%;
+    height: 600px;
+  }
+} */
